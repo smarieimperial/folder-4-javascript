@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//Starting from scratch, write code that loops through the following array and logs 
+//the name of each animal on the farm to the console:
+	var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+	
+	for (var i = 0; i < myFarm.length; i++) {
+		console.log("These are some animals " + myFarm[i]);
+	}
+	
+	//* Then check if the first letter in the animal's name begins with a "c" or "o". If it does, console.log: "Starts with 'c' or 'o'!"
+
+	//one way
+	var fLet;
+
+	for(var i=0; i<myFarm.length; i++){
+		// [i] represents the index in array myFarm, [0] represents the first character in the index.
+		fLet = myFarm[i][0];
+		// if the first letter is 'c' or 'o' then execute the statement inside the brackets.
+		if (fLet == 'c' || fLet == 'o') {
+			// print out the message inside console logs parenthesis.
+		console.log('starts with c or o');
+	}
+}
+
+//another way
+var fLet;
+
+for(var i=0; i<myFarm.length; i++){
+	//
+	fLet = myFarm[i].charAt(0);
+	if (fLet == 'c' || fLet == 'o') {
+		console.log('starts with c or o');
+	}
+}
+
+</script>
+</body>
+</html>
+
+

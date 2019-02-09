@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	/*
+		write a function that takes in 2 strings and tells you whether they're equal to one another regardless of extra spaces in front and behind and case
+
+		ex: 
+
+		"Apple", "APPLE" should console log true
+
+		"   Apple", "APPLE" should console log true
+
+
+		"   Ap ple", "APPLE" should console log false - don't worry about extra spaces in between the word
+
+	*/
+
+	//one way
+		// function compareStrs(a,b){
+		// 	console.log(a.trim().toLowerCase() == b.trim().toLowerCase());
+		// }
+
+		// compareStrs('apple', 'APPLE    ');
+
+	//another way
+    function compareStrs(a,b){
+			var strOne = a.trim().toLowerCase();
+			var strTwo = b.trim().toLowerCase();
+
+			console.log(strOne == strTwo);
+		}
+
+		compareStrs('apple', 'APPLE    ');
+</script>
+</body>
+</html>

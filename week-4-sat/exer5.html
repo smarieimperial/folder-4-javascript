@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// Write a function called calculator that takes in 3 arguments, expect the first two to be numbers 
+    //and the last one to be a string
+
+	// 	1,2,'add' would return 3
+	// 	1,2,'multiply' would return 2
+	// 	1,2, 'subtract' would return -1
+	// 	1,2,'divide' would return 0.5
+    // var x, y;
+    // var z.toString();
+
+    // function calculator(x, y, z) {
+    //     var sum;
+    //     var i;
+
+    //     switch () {
+    //         case 'add':
+    //         sum = x + y;
+    //         return i;
+    //         break;
+
+    //         case -:
+    //         sum = x - y;
+    //         retun i;
+    //         break;
+
+    //         case *:
+    //         sum = x * y;
+    //         return i;
+    //         break;
+
+    //         case /:
+    //         sum = x / y;
+    //         return i;
+    //         break;        
+
+
+    //     }
+    // }
+
+    //one way
+		function calculator(x,y,z){
+			if (z == 'add'){
+				console.log(x+y);
+			}
+
+			if (z == 'subtract'){
+				console.log(x-y);
+			}
+
+			if (z == 'multiply'){
+				console.log(x*y);
+			}
+
+			if (z == 'divide'){
+				console.log(x/y);
+			}
+		}
+
+	//another way
+		function calculator(x,y,z){
+			// var x = 1;
+			// var y = 2;
+			// var z = 'add';
+			if (z == 'add'){
+				console.log(x+y);
+			} else if (z == 'subtract'){
+				console.log(x-y);
+			} else if (z == 'multiply'){
+				console.log(x*y);
+			} else if (z == 'divide'){
+				console.log(x/y);
+			}
+		}
+
+		calculator(1,2,'add');
+</script>
+</body>
+</html>

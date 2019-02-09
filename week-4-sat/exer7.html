@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// //question 1
+		var fruit = "apple";
+		
+		console.log(fruit); //what console logs out?
+
+	//question 2
+		var fruit = "apple";
+
+		fruit = "pear";
+		
+		console.log(fruit); //what console logs out?
+	
+	// //question 3
+		var fruit = "apple";
+
+		function updateFruit(){
+			var fruit = "watermelon";
+		}
+		
+		console.log(fruit); //what console logs out?
+	
+	//question 4
+		var fruit = "apple";
+
+		function updateFruit(){
+			var fruit = "watermelon";
+		}
+
+		updateFruit();
+		
+		console.log(fruit); //what console logs out apple.
+	
+	//question 5
+        // global space
+		var fruit = "apple";
+
+		function updateFruit(){
+            // there is no 'var' in front of 'fruit' in the local space
+			fruit = "cherry";
+		}
+
+		updateFruit();
+		
+		console.log(fruit); //what console logs out cherry.
+	
+	// //question 6
+		var band = "slipknot";
+
+		function printBand(){
+			console.log(band);
+		}
+
+		printBand(); //what prints out?
+		
+	
+
+</script>
+</body>
+</html>

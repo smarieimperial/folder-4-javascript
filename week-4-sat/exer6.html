@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// 1.    Write a function called isFirstLetterG that checks if the first letter of a string is g regardless of case 
+    // and leading or trailing whitespace
+
+	// isFirstLetterG('g') should console log true
+	// isFirstLetterG('G') should console log true
+	// isFirstLetterG(' G   ') should console log true
+	// isFirstLetterG(' garth   ') should console log true
+	// isFirstLetterG(' dgod   ') should console log false
+
+	// 2.    Write a function called areFirstthreeLetsGrr that checks if the first three letters of a string
+    //  are g, r and r in that sequence regardless of case
+	// areFirstthreeLetsGrr('applegrr') should console false
+	// areFirstthreeLetsGrr('grr') should console true
+	// areFirstthreeLetsGrr('growl') should console false
+	// areFirstthreeLetsGrr('grrrrrrr') should console true
+	// areFirstthreeLetsGrr('grrrrrrreaaaaaaaat') should console true
+//one way
+function areFirstthreeLetsGrr(x){
+			var x = x.trim().toLowerCase();
+
+			console.log(x[0] == 'g' && x[1] == 'r' && x[2] == 'r')
+		}
+
+	//another way
+		function areFirstthreeLetsGrr(x){
+			var x = x.trim().toLowerCase().substring(0,3);
+
+			console.log(x == 'grr');
+		}
+
+
+</script>
+</body>
+</html>
