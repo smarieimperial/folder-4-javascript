@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//question 1
+	let fruitApple = "apple";
+	console.log(fruitApple); 
+// prints 'apple'
+
+
+//question 2
+	let fruitPear = "apple";
+	fruitPear = "pear";
+	console.log(fruitPear); 
+// prints out 'pear'
+	
+
+//question 3
+	let fruitLime = "lime";
+
+	function updateFruit(){
+		var fruitLime = "watermelon";
+	}
+		
+	console.log(fruitLime); 
+// prints out lime
+// in order for 'watermelon' to print out would need to
+// call the function 'updateFruit();'
+		
+			// es6
+				let fruitBlackberry = "blackberry";
+			
+				let updateFruit2 = () => fruitBlackberry = "watermelon" 
+
+				console.log(fruitBlackberry);
+			// prints out 'blackberry' 
+	
+//question 4
+var fruit4 = "clementine";
+function updateFruit4(){
+fruit4 = "tangerine hey";
+}
+updateFruit4();
+console.log(fruit4); 
+// prints out 'tangerine hey'
+
+		// es6
+		let fruitTangerine = "clementine";
+		let updateFruit3 = () => fruitTangerine = "tangerine"
+		updateFruit3(); // function call updates the variable 'fruit' from 'orange' to 'tangerine'
+		console.log(fruitTangerine);
+		// prints out "tangerine"
+	
+//question 5
+var fruit5 = "lemon";
+function updateFruit5(){
+fruit5 = "green apple hey";
+}
+updateFruit5();
+console.log(fruit5); 
+// prints out 'green apple hey'
+
+		// es6
+		let fruitGreenApple = "lemon";
+		let updateFruity = () => fruitGreenApple = "green apple"
+		updateFruity();  // function call updates the variable 'fruit' from 'lemon' to 'green apple'
+		console.log(fruitGreenApple); 
+		// print out 'green apple'
+
+	
+//question 6
+var band = "metallica";
+
+function printBand(){
+	console.log(band);
+}
+
+printBand(); 
+// prints out 'metallica'
+
+		// es6
+		let bandRedwood = "redwood";
+
+		let printBand2= () => console.log(bandRedwood)	
+
+		printBand2();
+		// prints out 'redwood'
+	
+
+</script>
+</body>
+</html>
